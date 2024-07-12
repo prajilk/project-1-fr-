@@ -38,6 +38,7 @@ const MarqueeItems = () => {
   ];
   return (
     <>
+      {/* For larger Devices */}
       <ul className="hidden h-40 animate-marquee flex-nowrap text-center transition-transform duration-1000 md:flex">
         {items.map(({ title }, i) => (
           <li
@@ -48,10 +49,12 @@ const MarqueeItems = () => {
           </li>
         ))}
       </ul>
-      <ul className="flex h-32 animate-marquee flex-nowrap text-center transition-transform duration-1000 md:hidden">
+
+      {/* For smaller devices */}
+      <ul className="flex h-32 animate-marquee flex-nowrap gap-3 pe-3 text-center transition-transform duration-1000 md:hidden">
         {items.map(({ title }, i) => (
-          <li key={i} className="flex w-[100vw] flex-shrink-0 justify-center">
-            <div className="relative box-border flex h-full w-[50vw] flex-col justify-center rounded-2xl border border-transparent bg-[#111] bg-clip-padding before:absolute before:inset-0 before:-z-10 before:-m-[1px] before:rounded-2xl before:[background:linear-gradient(to_top_right,#373737,#E1F29670,#373737)]">
+          <li key={i} className="flex w-[50vw] flex-shrink-0 justify-center">
+            <div className="relative box-border flex h-full w-[50vw] flex-col justify-center rounded-2xl border border-transparent bg-[#111] from-transparent via-[#E1F296]/30 to-transparent bg-clip-padding before:absolute before:inset-0 before:-z-10 before:-m-[1px] before:rounded-2xl before:bg-gradient-to-tr">
               <h3 className="text-2xl font-bold">{title}</h3>
             </div>
           </li>
