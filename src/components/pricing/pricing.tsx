@@ -2,13 +2,13 @@ import Button from "../ui/button";
 
 const Pricing = () => {
   return (
-    <div className="my-48 space-y-20">
+    <div className="my-48 space-y-20 px-5">
       <h2 className="mx-auto max-w-sm text-center text-2xl font-bold md:max-w-full md:text-4xl">
         <span className="text-primary">Take Your</span> Tickets Don&apos;t Miss
         The Event
       </h2>
       <div className="mx-auto grid w-fit gap-10 lg:grid-cols-2">
-        <div className="mx-auto flex max-w-sm flex-col rounded-xl border border-zinc-700 px-10 py-10 md:mx-0 md:max-w-full md:px-12">
+        <div className="mx-auto flex flex-col rounded-xl border border-zinc-700 px-10 py-10 md:mx-0 md:max-w-full md:px-12">
           <div className="space-y-4">
             <h3 className="text-2xl font-medium opacity-50 md:text-3xl">
               Standard Access
@@ -37,7 +37,7 @@ const Pricing = () => {
             </Button>
           </div>
         </div>
-        <div className="mx-auto max-w-sm rounded-xl border border-primary/60 px-10 py-10 text-primary md:mx-0 md:max-w-full md:px-12">
+        <div className="mx-auto rounded-xl border border-primary/60 px-10 py-10 text-primary md:mx-0 md:max-w-full md:px-12">
           <div className="space-y-4">
             <h3 className="text-shadow text-2xl font-medium md:text-3xl">
               Premium Access

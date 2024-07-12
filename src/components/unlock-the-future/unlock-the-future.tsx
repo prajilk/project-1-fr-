@@ -36,7 +36,7 @@ const UnlockTheFuture = () => {
         </p>
         <Button
           size={"lg"}
-          className="rounded-[20px] px-[54px] py-5 after:rounded-[20px]"
+          className="rounded-[20px] after:rounded-[20px] md:px-[54px] md:py-5"
         >
           DISCOVER
         </Button>

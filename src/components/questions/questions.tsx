@@ -39,7 +39,7 @@ const Questions = () => {
         Answer to our most
         <br /> frequently asked question
       </h2>
-      <ul className="mx-auto max-w-2xl space-y-10 lg:max-w-[54rem]">
+      <ul className="mx-auto max-w-2xl space-y-10 px-5 lg:max-w-[54rem]">
         {QnA.map((list, i) => (
           <QuestionList index={i} {...list} key={i} />
         ))}
